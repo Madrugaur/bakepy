@@ -1,7 +1,8 @@
 import importlib.util
 import click
 import os
-from cookbook import CookBook
+from pbake.cookbook import CookBook
+
 def compile_bakefile(path):
   spec = importlib.util.spec_from_file_location("BakeFile", path)
   bakefile = importlib.util.module_from_spec(spec)

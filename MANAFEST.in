@@ -1,0 +1,3 @@
+exclude requirements.txt
+exclude Bakefile.py
+exclude .gitignore

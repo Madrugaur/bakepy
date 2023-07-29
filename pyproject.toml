@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling", "click"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
 name = "pbake"
-version = "0.0.1"
+version = "0.0.6"
 authors = [
   { name="Braden Little", email="bml7569@rit.edu" },
 ]
@@ -16,7 +16,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+  "click"
+]
 
 [project.urls]
 "Homepage" = "https://github.com/Madrugaur/bakepy"
 "Bug Tracker" = "https://github.com/Madrugaur/bakepy/issues"
+
+[project.scripts]
+bake = "pbake.bake:main"
